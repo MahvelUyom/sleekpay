@@ -435,7 +435,7 @@ header button{
 }
 
 
-@media (max-width:342px){
+@media (max-width:500px){
   .contact-flex{
     border: 0;
    }
