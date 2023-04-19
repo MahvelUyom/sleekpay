@@ -1,0 +1,442 @@
+
+*{
+  font-family:sans-serif ;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border:none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+  color: white;
+}
+header{
+  position: fixed;
+  top:0; left:0;
+  width:100%;
+  background:rgb(4, 4, 33);
+  /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); */
+  padding:.9rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  border-bottom: 1px solid white;
+}
+
+header .logo{
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: serif;
+  color:var(--purple);
+}
+
+header .logo span{
+  color:white;
+}
+
+header .navbar a{
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color:white;
+}
+
+header .navbar a:hover{
+  color:var(--pink);
+}
+
+header input{
+  display: none;
+}
+
+header label{
+  font-size: 3rem;
+  color:white;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header button{
+  padding: .8rem 2rem;
+  border-radius: 20px;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin: 0 3rem;
+}
+.login{
+  background: rgb(2, 2, 44);
+  color: white;
+  border: 1px solid white;
+}
+.create{
+  background: white;
+  color: rgb(2, 2, 44);
+}
+
+.home{
+  background: rgb(4, 4, 33);
+  min-height: 100vh;
+  padding: 30rem 3rem;
+}
+.home-flex{
+  display: flex;
+  justify-content: center;
+}
+.home .text h1{
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+.home .text p{
+  font-size: 2rem;
+}
+.home .img img{
+  width: 50rem;
+}
+.home button{
+  padding: .8rem 2rem;
+  border-radius: 20px;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.white{
+  min-height: 100vh;
+  background: white;
+  color: rgb(2, 2, 44);
+  padding: 20rem 3rem;
+}
+.white-flex{
+  display: flex;
+  justify-content: center;
+}
+.white h1{
+  font-size: 4rem;
+  margin: 3rem 0;
+}
+.white p{
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.white button{
+  padding: .8rem 2rem;
+  border-radius: 20px;
+  background: blue;
+  color: white;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.white .in-flex{
+  margin: 3rem;
+}
+.white .in-flex i{
+  font-size: 2rem;
+  background: rgb(206, 206, 230);
+  padding: 1rem;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+.white h3{
+  font-size: 2rem;
+}
+.white .top{
+  display: flex;
+}
+.white .bottom{
+  display: flex;
+}
+.top-1{
+  margin: 0 2rem;
+}
+.manage{
+  background: rgb(4, 4, 33);
+  min-height: 100vh;
+  padding: 30rem 3rem;
+}
+.manage-flex{
+  display: flex;
+  justify-content: center;
+}
+.manage .img:not(.users .img){
+  background: rgb(55, 55, 240);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 3rem;
+}
+.manage .img img:not(.users img){
+  width: 30rem;
+  margin-top: 5rem;
+}
+.manage .text h1{
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+.manage .text:not(.users .text){
+  margin-left: 6rem;
+}
+.manage .text p{
+  font-size: 1.7rem;
+}
+.manage button{
+  padding: .8rem 2rem;
+  border-radius: 20px;
+  background:white;
+  color: rgb(4, 4, 33);
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.manage .users{
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+/* .manage .users-flex{
+  display: flex;
+} */
+.manage .users img{
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.testimony{
+  min-height: 100vh;
+  background: white;
+  color: rgb(2, 2, 44);
+  padding: 20rem 3rem;
+}
+.testimony h1{
+  font-size: 4rem;
+}
+.testimony .right{
+  float: right;
+}
+.testimony p{
+  font-size: 1.3rem;
+}
+.test-flex{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.test-flex .box{
+  border: 1px solid;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 2rem;
+}
+.test-flex .box i{
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+.test-flex .box p{
+  font-size: 1.8rem;
+}
+.test-flex h4{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.text-img img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+
+.contact{
+  background: rgb(4, 4, 33);
+  min-height: 50vh;
+  padding: 30rem 3rem;
+}
+.check-flex, .contact-flex{
+  display: flex;
+  justify-content: center;
+}
+.check-flex input{
+  width: 5rem;
+  outline: 0;
+  border: 0;
+}
+.check-flex p{
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+.contact-flex{
+  margin: 4rem 10rem;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 30px;
+}
+.contact-flex input{
+  padding: 1rem 2rem;
+  margin-right: 3rem;
+  border-radius: 30px;
+  font-size: 2.5rem;
+
+}
+.contact-flex button{
+  padding: 0 2rem;
+  border-radius: 30px;
+  font-size: 2.5rem;
+
+}
+.phones{
+  min-height: 100vh;
+  background: white;
+  color: rgb(2, 2, 44);
+  padding: 20rem 3rem;
+}
+.phone-flex{
+  display: flex;
+  justify-content: center;
+}
+.phone-1 img{
+  width: 40rem;
+}
+.phone-2 img{
+  width: 55rem;
+}
+
+.footer{
+  background: rgb(4, 4, 33);
+  min-height: 100vh;
+  padding: 30rem 3rem;
+}
+.footer-flex{
+  display: flex;
+  /* justify-content: center; */
+}
+.footer h1 i{
+  margin-right: 1rem;
+}
+.footer h1{
+  font-size: 4rem;
+}
+.footer p{
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.footer h3{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.footer .links{
+  margin-left: 10rem;
+}
+.footer a{
+  font-size: 2rem;
+  display: block;
+  text-decoration: underline;
+  color: white;
+  margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    
+  html{
+      font-size: 55%;
+  }
+
+}
+
+
+@media (max-width:768px){
+
+  header label{
+      visibility: visible;
+      opacity: 1;
+  }
+
+  header .navbar{
+      position: absolute;
+      top:100%; left: 0;
+      width:100%;
+      padding:1rem 2rem;
+      border-top: .1rem solid rgba(0,0,0,.2);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+      transform-origin: top;
+      transform: scaleY(0);
+      opacity: 0;
+      transition: .2s linear;
+      background: rgb(2, 2, 44);
+
+   }
+  
+  header .navbar a{
+      display: block;
+      margin:2rem 0;
+      color: white;
+      font-size: 2rem;
+  }
+
+  header input:checked ~ .navbar{
+      transform: scaleY(1);
+      opacity: 1;
+  }
+
+  header input:checked ~ label::before{
+      content:'\f00d';
+  }
+  header button{
+    display: none;
+  }
+  .home-flex{
+    flex-direction: column-reverse;
+  }
+  .home .img img{
+    width: 40rem;
+  }
+   .footer-flex, .test-flex,.phone-flex,.white-flex,.manage-flex,.in-flex{
+    display: block;
+    justify-content: center;
+   }
+   .contact-flex{
+    margin: 2rem;
+    display: flex;
+    
+   }
+   .contact-flex input,.contact-flex button{
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+  }
+   .phone-1 img{
+    width: 30rem;
+    margin-left: 5rem;
+  }
+  .phone-2 img{
+    width: 40rem;
+  }
+  .footer h3{
+    font-size: 3rem;
+    margin-top: 4rem;
+  }
+  .footer .links{
+    margin-left: 2rem;
+  }
+}
+
+
+@media (max-width:342px){
+  .contact-flex{
+    border: 0;
+   }
+}
